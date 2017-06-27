@@ -1,16 +1,15 @@
-Ethereum Notes
+# Ethereum Notes
   https://blockgeeks.com/guides/what-is-ethereum/
 
- Blockchain tech has more applications than digital currency and its association      
- with bitcoin
+Blockchain tech has more applications than digital currency and its association with bitcoin
 
- Electronic voting & digitally recorded property assets to regulatory compliance and trading are now being actively developed and deployed faster than ever. 
+Electronic voting & digitally recorded property assets to regulatory compliance and trading are now being actively developed and deployed faster than ever. 
 
- Ethereum is an open software platform based on blockchain technology that enables developers to build and deploy decentralized applications
+Ethereum is an open software platform based on blockchain technology that enables developers to build and deploy decentralized applications
 
 Ethereum is a distributed public blockchain network
 
-So is there a difference between Ethereum and Bitcoin???
+## So is there a difference between Ethereum and Bitcoin???
 
 YES! Ethereum and Bitcoin differ substantially in purpose and capability: 
 	- Bitcoin offers one particular application of blockchain technology.
@@ -19,13 +18,13 @@ YES! Ethereum and Bitcoin differ substantially in purpose and capability:
 	- Ether is also used by application developers to pay for transaction fees and services on the Ethereum network
 	- Ethereum is based on blockchain technology where all transactions are meant to be irreversible and unchangeable. 
 
-What is a Smart Contract?
+## What is a Smart Contract?
 
 Smart Contract: just a phrase used to describe computer code that can facilitate the exchange of money, content, property, shares and anything of value
 
 On a blockchain the smart contract becomes like a self operating computer program that automatically executes when specific conditions are met. 
 
-Smart contracts run exactly as programmed, and there is:
+## Smart contracts run exactly as programmed, and there is:
 		+ no  possibility of censorship
 		+ downtime
 		+ fraud or third party interference
@@ -36,8 +35,6 @@ An option contact between parties is written as code in the blockchain. The indi
 A triggering event is like an expiration date, and strike price is hit and the contract executes its self according to the coded terms
 
 Regulators can use the blockchain to understand the activity in the market while maintaining privacy.
-
-The Ethereum Virtual Machine
 
 Vitalik Buterin: developed Ethereum 
 
@@ -57,7 +54,7 @@ Any services that are centralized can be decentralized using Ethereum (I believe
 
 Ethereum can also be used to build a Decentralized Autonomous organization (DAO).
 
-What is a DAO??
+## What is a DAO??
 
 A DAO is a fully autonomous decentralized organization with no single leader. 
 
@@ -67,7 +64,7 @@ zthe code is designed to replace the rules and structure of a traditional organi
 
 A DAO is owned by everyone who purchases tokens, but instead of each token equating to equity shares & ownership, tokens act as contributions that give people voting rights.
 
-Ethereum Decentralized Platform:
+## Ethereum Decentralized Platform:
 
 	-Immutability: a third party cannot take any changes to data
 	-Corruption & tamper proof: apps are based on a network formed around the principle consensus, making censorship impossible
@@ -77,7 +74,7 @@ applications are well protected against hacking attacks & fraudulent activities.
     - Smart contracts are only as good as the people who write them 
     - any action taken by a central party raises serious questions about the decentralized nature of an application.
 
-To access Ethereal you need to access its native Mist Browser. 
+## To access Ethereal you need to access its native Mist Browser. 
 
 Mist provides a user-friendly interface & digital wallet for users to trade & store Ether as well as write, manage, deploy and use smart contracts. 
 
