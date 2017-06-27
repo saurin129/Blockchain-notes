@@ -1,26 +1,26 @@
-**MOST OF THIS WILL BE A MESS RIGHT NOW** 
+** MOST OF THIS WILL BE A MESS RIGHT NOW ** 
 
-Used online videos for most of my Solidity/Blockchain/Ethereum notes: 
+#Used online videos for most of my Solidity/Blockchain/Ethereum notes: 
 
-Bitcoin for Beginners notes:
+## ** Bitcoin for Beginners notes: **
 
 Good Book to Read: Mastering Bitcoin & The Internet of Money
 
 You can download the whitepaper from bitcoin.org 
 
-Bitcoin & it's network: 
+### Bitcoin & it's network: 
   -system of electronic cash
   -(random mesh network) peer to peer
   -white paper implemented in software
   -it can be run on your computer.
 
-NOBODY CONTROLS BITCOIN’S NETWORK (DECENTRALIZED)
+** NOBODY CONTROLS BITCOIN’S NETWORK (DECENTRALIZED) **
 
 you know whose making the transactions through their digital signatures. the entire network knows that transactions have occurred due to digital signatures (No ID, or personal info is required for a transaction)
 
 In bitcoin a software agent, not owned by anyone through cryptography can interact , own and use bitcoin for transactions internationally 
 
-**Suggest Downloading Bitcoin Wallet and trying it out(Buy a satoshi)**
+** Suggest Downloading Bitcoin Wallet and trying it out(Buy a satoshi) **
 
   -The cost of doing a transaction, every time is a $1
   -Blockchain: global transaction ledger
@@ -28,7 +28,7 @@ In bitcoin a software agent, not owned by anyone through cryptography can intera
   -Open border system(only thing that matters is if the transaction is valid)
   -Bitcoin: replaced of trusts through institutions to trust through networks
 
-Introducing the Bitcoin:
+## Introducing the Bitcoin:
 
 What determines the buying power of a company? 
 everyone determines this 
@@ -39,7 +39,7 @@ As the volumes goes up, transactions go up, and volatility drops, but know this 
 
 Its very difficult to hack people through bitcoin, and yes sure we've created a honey pot to attract all of the biggest hackers in the world, but that only makes it stronger. 
 
-BITCOIN:
+### BITCOIN:
   + largest cryptographic deployment in world
   + large public key infrastructure in the world
   + largest honey pot in the world
@@ -49,7 +49,7 @@ The supply of bitcoin is determined algorithmically based on geometrically decli
 
 2141 is when bitcoin is done being created (21 million coins is the asymptotic cap)
 
-How Bitcoin works under the hood?
+### How Bitcoin works under the hood?
 
 Bitcoin: digital file that lists account and values it holds
 
@@ -73,9 +73,9 @@ Transaction List exists not really a ledger, and Outputs are more like puzzles t
 
 You can create unlimited public keys, but only 1 private key per account, if you want to switch accounts then you will have a different public key and a different private key. Public key creation ( sending/receiving address) completely anonymous
 
-Bitcoin Transaction Security:
+### Bitcoin Transaction Security:
   	1. Digital Signatures
-	  2. Referenced Transactions
+	2. Referenced Transactions
 
 Transaction Order, no guarantee that an order that they are received is the order they were created. The time stamp could be fake, never trust bob. Theres no way to prove which transaction came first HENCE THE BLOCKCHAIN was created. 
 
@@ -102,13 +102,12 @@ bitcoin is faster for merchants
 
 more power solves faster.
 
-Summary:
+## Summary:
 
-Bitcoin:
+### Bitcoin:
 	-digital Signatures, safe guard money
 	-transaction chains, store history of ownership
 	- block chain , holds transaction order
-
 	-gov meddling is no no
 	-anonymity
 	- lower global transaction fees
