@@ -1,0 +1,80 @@
+Starting Solidity: 
+
+Install Ethereum Client (Geth)
+
+Install the MIST wallet : browser for distributed applications and wallet to access accounts, fund, and products
+
+To Create a private network:
+
+Download the Genesis.json file from somewhere or copy this: 
+
+{
+  "coinbase"   : "0x0000000000000000000000000000000000000001",
+  "difficulty" : "0x20000",
+  "extraData"  : "",
+  "gasLimit"   : "0x2fefd8",
+  "nonce"      : "0x0000000000000042",
+  "mixhash"    : "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "timestamp"  : "0x00",
+  "alloc": {},
+  "config": {
+        "chainId": 15,
+        "homesteadBlock": 0,
+        "eip155Block": 0,
+        "eip158Block": 0
+    }
+}
+
+Then create a custom data directory : where the blockchain is stored
+
+FIRST STEP:
+geth --datadir=/path/to/a/chain/directory init /path/to/genesis.json 
+
+SECOND STEP:
+geth --datadir=/path/to/your/chain/directoy/from/above 
+
+THIRD STEP: (this automatically opens mist)
+/Applications/Mist.app/Contents/MacOS/Mist --rpc /Users/JaneDoe/chaindata/geth.ipc 
+
+FOURTH STEP:
+geth --dev attach ipc:/Users/JaneDoe/chaindata/geth.ipc 
+
+Then go ahead and create an Account inside mist, which will be your etherbase.
+
+Next lets go mine some faux ether:
+Mine Ether only for private network
+
+Go to the console that has geth attach ipc:/Users/JaneDoe/chaindata/geth.ipc running  and type in: 
+
+ miner.start(2); //This will start mining and in your other geth console or rpc console you will see the DAG mining in progress
+
+ miner.stop(); //This is to stop your mining, 
+ 
+ Write a Hello World Dapp
+	-simple function
+	-deploy our private network
+
+Keep the mining going while deploying your first contract in Mist and work on that for a while, when you feel you know a lot move onto truffle. 
+
+
+Starting Truffle:
+
+Make sure you have nodejs already installed. 
+
+Then type in:  
+
+npm install -g truffle //This will install truffle 
+
+Then go ahead and install test rpc with the following command, this will allow you to deploy contracts to an "emulated blockchain" over RPC on your local machine:
+  npm install -g ethereumjs-testrpc
+
+truffle  //runs truffle
+
+truffle compile
+
+truffle migrate if this doesn’t work go to solidity-experiments and type in: truffle migrate —reset
+
+truffle console
+
+Counter0.deployed() -> this is the smart contract name that is deployed, make sure it is already in the network (Counter0 is an example)
