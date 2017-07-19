@@ -1,0 +1,42 @@
+STATE CHANNELS:
+
+State channels will be necessary for handing any reasonably large amount of transactions. We have a simple example below which allows peers to signed guarantees of payment per microtransaction off-chain. At the heart of this contract is the ecrecover() function which recovers the address associated with the public key from a signature. This is at least a day in itself (https://ethereum.stackexchange.com/questions/15364/totally-baffled-by-ecrecover)
+
+Intro:
+
+https://medium.com/@matthewdif/ethereum-payment-channel-in-50-lines-of-code-a94fad2704bc
+
+Githhub:
+
+https://github.com/mattdf/payment-channel
+
+PEER DISCOVERY:
+
+Ethereum uses Kademlia Protocol for peer selection. We will explore using this as a mechanism for establishing the necessary channels for p2p off-chain messaging https://github.com/ethereum/wiki/wiki/Kademlia-Peer-Selection
+
+TOKENIZATION:
+
+The following contracts facilitate tokenization of an arbitrary space. The economics of this are discussed in the documents below. The Curation Markets contracts is an excellent example of a novel tokenization implementation ( if truffle is giving you a headache with gas errors, publish manually)
+
+Intro:
+
+https://medium.com/@simondlr/introducing-curation-markets-trade-popularity-of-memes-information-with-code-70bf6fed9881
+
+Whitepaper:
+
+https://docs.google.com/document/d/1VNkBjjGhcZUV9CyC0ccWYbqeOoVKT2maqX0rK3yXB20/edit?usp=sharing
+
+Github:
+
+https://github.com/ConsenSys/curationmarkets
+
+The ERC223 Standard was implemented in Token to:
+
+1. Avoid Accidentally losing Tokens inside contracts
+2. Avoid Impossibility of handling incoming transactions in receiver contract
+3. To make sure token-transactions should match Ethereum ideology of uniformity
+Link to examples of ERC223Tokens and the documentation of the standard: https://github.com/Dexaran/ERC23-tokens/tree/Recommended
+
+Link to a good video explanation: https://www.youtube.com/watch?v=GS62VNyPVHs
+
+For good PreSale/Crowdsale smart contracts then look at the google docs shared on Slack.
