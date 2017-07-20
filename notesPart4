@@ -1,0 +1,561 @@
+section 11:
+the types of block chains you can work with 
+
+Public Blockchains’s:
+
+-Bitcoin
+-Ethereum 
+
+Anyone can:
+1. Read the Code
+2. See the Transactions
+3. Join Consensus Process
+
+Consortium Blockchain(restricted)
+	-all decisions are centralized
+
+example: R3: distributed database technology firm. It leads a consortium of more than 70 of the worlds biggest financial institutions in research and development of the blockchain database usage  in the financial system .
+
+Private Blockchains
+
+Multichain helps organizations to rapidly build applications on blockchain & shared ledgers
+
+Section 12:
+
+Walstreet
+Issue Colored Coins: no time consuming  or expensive middle man
+
+blockchain makes selling of coins and shares as faster, cheaper and better.(seamless experience, example: shape shift)
+
+Smart Contracts: automatic execution of contractual obligations one certain conditions have been met, no third parties
+
+Cloud Storage (stroj) 
+
+	-storjcoinX - cryptocurrency
+
+Section 13:
+	-Augur - PROJECT ON ETHEREUM (rep)(Market predictor)
+
+	-slock. it  project on Ethereum (Universal Sharing Network)
+
+	-ujo project on ethereum (decentralized version of spotify)
+
+	-akasha project on ethereum (social network site) (you get ether when ever someone upvotes your content)
+
+Section 14:
+
+Smart Contracts: help you exchange things of value in a transparent and secure way that removes the middle man in the process. 
+
+key features of smart contracts:
+
+autonomy: no middle person is needed to make sure contract is process as should be (lawyers)
+
+execution of smart contract is managed by network nodes
+
+Trust: you don’t need an external individual, its all done upon block chain managed by nodes
+
+Backed-up: duplicated on to every single node, stored all across nodes
+
+Safety: smart contracts are secured by cryptography. 
+
+Speed: traditional contracts take a long time to process, but smart of contracts utilize power of code to speed up the process.
+
+Savings: all the middle man and middle man fees are gone saving money
+
+Accuracy: less people involved so less human error, only software no human error chance. 
+
+Section 16:
+
+Smart Contract lets you speed up the process of going through a smart contract
+
+Companies that work with Smart Contract
+RSK 
+MONAX
+Balanc3
+
+Section 17:
+
+Contract Wallets are controlled by code, the master is the account but Accounts are not controlled by code.
+
+accounts are used to store there and control the contract wallets
+
+contracts can be set up at multi signature wallets
+multi-signature wallets have an additional layer of security for transactions have to happen. 
+
+Verify another user to sign the process before it can be broadcast to the blockchain. 
+
+contract wallets cost ethere(gas) to use them
+
+accounts use no ether to set up. 
+
+Section 18:
+
+Mist is a Ethereum Wallet, it manages account, send/receives there, deploys contracts and uses contracts.
+
+Mist is a browser, use ,,Web”-Dapps
+have a geth node running
+securely use one account to ,,browse” a Dapp
+
+etc.accounts
+
+GitHub.com/ethereum/wiki/wiki/JSON-RPC
+
+for contracts refer to section 5 episode 20
+
+eth.sendTransaction({from:eth.accounts[1],to:eth.accounts[2],value:web3.towei(0.5, “ether”)});
+
+MAKE SURE TO UNLOCK OUR ACCOUNT
+
+personal.unlockAccount(eth.accounts[1]);
+
+
+
+Section 22:
+
+Truffle 
+truffleframework.com
+
+Ethereum TextRPC: Node.js based Ethereum Client for testing and development.
+
+
+to install the test RPC:
+nom install -g ethereumjs-testrpc
+
+to use it: 
+	testrpc <options>
+		- options are all at GitHub.com/ethereumjs/testrpc
+
+geth attach http://localhost:8545 
+	-this will open the geth JS console, but connected to the testrpc which will do any commands you type in. 
+
+eth.accounts (shows all the accounts)
+
+eth.sentTranscaction({from:eth.account[0], to:eth.accounts[1], value:10000000});
+  - Transaction has been conducted in the console
+The transaction # should be printed out here. 
+
+Section 23:
+
+Ethereum Name Service (ENS) : secure & decentralized way to address resources both on and off the blockchain simply using human readable names
+	-no more long addresses, it removes the need to copy/type out long hexadecimal addresses 
+	- secure, and built on smart contracts, it does not have the insecurity of the DNS system
+	-truly distributed, anyone can register for a .eth domain name for themselves by participating in an auction process, mediated by the blockchain. 
+
+
+Oracalize: data carrier for decentralized apps, 
+	-smart contracts cannot fetch external data on their own thats why we have Oracalize, 	to fetch the data, and a reliable connection between Web APIs and the Dapp. 
+	- enforced by crypographic proofs
+	- dev.oracalize.it
+
+Section 24: 
+
+Different Phases of Development
+	Task 1: Sketch out your idea
+		-Write down what it should do
+		-make a prototype
+		-write down a flowchart of how people interact
+		-write down the different functions, variables, interfaces
+	Task 2: Prototyping
+		- quick and dirty prototype
+		- use the testrpc / browser solidity
+		- need a debugger use the ethereum studio
+		- maybe abstract things, have several smaller contacts that build upon each other
+	Task 3: Lay out the Testing
+		- Write Unit Tests
+		- solidity Tests
+		- javascript test cases (
+		- use a testing framework
+		- Truffles has testing frameworks
+		-Ethereum Studio has testing scenarios
+	Task 4: Implement
+		-write code so that test cases are fulfilled
+		- implement methods
+	Task 5: Deploy on Test-Net
+		-Deploy code on Test-Net
+		- Find ,,beta”users
+			invite friends
+		-Iterate until your are satisfied,(CODE DEPLOYED CANNOT BE Updated
+			-except you can make a fork of the chain(don’t recommend it)
+	Task 6: Deploy on the Main-NEt
+		- Let users know
+		- Give them instructions
+			-GETH
+			-MetaMask
+	TASK 7: MARKETING
+
+truffle init web pack
+	-contacts
+	-migrations
+	-tests
+	-user interface
+	-webpack build pipeline
+ truffle compile
+
+truffle migrate (migrate to test rpc network)
+
+npm run dev:  opens up a local server then will say project is running at http://localhost:8545
+then should say  web pack: compiled successfully at the end
+
+( you can open u the contracts, and truffle.js  & webpack.config.js in the IDE PHP.storm)
+
+section 26: 
+
+mkdir mydatadir
+
+geth —datadir=/Users/Kanchi/mydatadir/ init genesis.json (Make sure to say mydatadir tr it will overwrite your other chain data work)
+
+geth —datadir=/Users/Kanchi/mydatadir
+
+rpc endpoint watche/listens at the 8545 port so if rpc endpoint isn’t running then type in 
+
+geth —datadir=/Users/Kanchi/mydatadir/ —rpc
+
+then you’ll see
+ 
+HTTP endpoint opened :  http://localhost:8545
+
+geth —datadir=/Users/Kanchi/mydatadir/ —roc —rpccorsdomain “http://localhost:8545
+
+
+good place to ask questions:
+
+http://ethereum.stackexchange.com/questions/2376/what-does-each-genesis-json-parameter-mean
+
+Ethereum Yellow Paper: https://ethereum.github.io/yellowpaper/paper.pdf
+
+Section 27:
+
+Typical Genesis.json file:
+{
+	  "coinbase"   : "0x0000000000000000000000000000000000000001",
+	  "difficulty" : "0x20000",
+	  "extraData"  : "",
+	  "gasLimit"   : "0x2fefd8",
+	  "nonce"      : "0x0000000000000042",
+	  "mixhash"    : "0x0000000000000000000000000000000000000000000000000000000000000000",
+	  "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
+	  "timestamp"  : "0x00",
+	  "alloc": {},
+	  "config": {
+	        "chainId": 15,
+	        "homesteadBlock": 0,
+	        "eip155Block": 0,
+	        "eip158Block": 0
+	    }
+	}
+
+mixHash: a 256 bit hash which proves combined with the none that a sufficient amount of computation has been carried out on this block, formally Hm. 
+ 
+mixHash aka just proves that the Proof of Work (PoW) is done 
+
+Now what is a nonce?
+
+none is a 64 bit hash that proves combined with the mix-hash a sufficient amount ofcomputation has been carried out on this block, formally Hn
+
+aka a hash that proves that a certain block has been mined 
+
+so mixHash is a combo of a nonce, which is a has that proves a certain block has been mined, that proves that there is Proof of Work. 
+
+difficulty: a scalar value corresponding to the difficulty level of this block. This can be calculated from the previous blocks difficulty and time stamp. formally known as Hd. 
+
+aka. a number that increases the mining time.  
+
+coinbase:
+	-an address(160-bit address)
+	-set in the miner
+	- where ether go during mining
+	-also called ,,beneficiary” or ,,etherbase”
+
+timestamp: scalar value equal to the reasonable output of Unix’s time() at this blocks inception: formally Hs.
+
+Used to verfify the order of the blocks within the chain
+
+If the time between 2 blocks is getting to long, the difficulty decreases, if the time is shorter than the difficulty increases. 
+
+parentHash: Keccak 256-bit hash of the parent block’s header, and in its entirety: formally Hp. 
+
+a complete has of the parent block header — including the nonce and mixHash
+
+points to the parent block, the foundation of the block chain
+
+only the genesisBlock can be 0, genesis means beginning remember 
+ 
+gasLimit:  set in the genesisBlock, its a scalar value equal to the current limit of gas expenditure per block; formally H l. 
+
+aka the number that stops too complex contracts from executing.
+
+Once the gasLimit has been hit then the contract is stopped. 
+
+Alloc: preallocate accounts withe ether
+
+ExtraData: optional Data field
+
+Section 28:
+
+Decentralization eliminates all the Data Storage Risk , there is no central point to exploit, its all spread across
+
+A decentralized network with many nodes is far more secure, it would take an enormous amount of  computing power to cause any of them harm
+
+There are three times of network:
+
+1. Centralized
+	-one node does everything
+2. Distributed
+	-Nodes Distribute work to  sub-nodes
+3. Decentralized
+	- nodes are only connected to peers
+
+5 steps of a Decentralized Blockchain:
+	1. Transaction Process Begins
+	2. Transaction is Sent Through Miners
+	3. Transaction is Broadcast to Other Nodes
+	4. Transaction is Added to the Blockchain
+	5. Recipernt Receives what you’ve sent
+
+Look at article on Medium called the Meaning of Decentralization
+https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274
+
+Section 29:
+
+	 The Positive Uses of Decentralization
+
+	1. Reduced Likelihood of Failure (many nodes(separate entities=hard to have a system failure)
+	2. Not as prone to Hacking attacks
+	3. Requires a huge amount of computing power = $$$$$
+	4. It costs around 1.2 million to bring down the bitcoin network
+	5. Decision making is done as a whole, no central body determines whats the best
+
+section 30:
+
+Truffle  frame work.com
+http://truffleframework.com/tutorials/truffle-and-metamask
+mimblewimble
+
+npm node js
+
+parity —wrap as the wallet
+	https://parity.io
+
+use test rpc to deploy it locally rather than live. 
+
+Minimum amount of coins to get into the 
+
+etc implementations
+
+
+Course 2:
+
+Video 1: 
+
+Use Sublime as your IDE, check if you can use brackets too. 
+
+What is Blockchain:
+	-its a  decentralized data structure that stores information in a particular format
+What is a Data Structure?
+	-Arrangement of data in computer memory.
+Real life examples:
+	-PDF Docs
+	-Excel Sheets
+	-MySQL Table
+
+Video 2:
+
+In the real Blockchain case, each block is built on top of the recent block and use its previous  block’s content as a signature
+
+building a block & adding it in the blockchain is the task of the miner nodes. 
+
+In public Blockchain it is made computationally difficult to add a block to prevent attacks. 
+
+Miners try to guess a number in such a way that if it gets crunched with the most recent block’s fingerprint than it will create a new fingerprint which will be less that the last/most recent block in the blockchain. 
+
+It takes time and power to add a block to the blockchain , so you get a reward.
+
+private blockchains can chose other methods to add a block as they can trust miners using a contract. 
+
+Video 3:
+
+Solidity: high level object-oriented language for smart contracts. 
+
+Solidity lets you program ethereum a block chain-based virtual Machine. 
+
+Solidity is a statically typed programming language , it is case sensitive. 
+
+A contract programming language that has similarities to Javascript and C..
+
+Contract-specific features include modifier(guard ) clauses, event notifiers for listeners, and customer global variable.
+
+Solidity is complied to byte code, that is executable on the Ethereum Virtual Machine (EVM).
+ 
+EVM:
+ 	- programmable blockchain
+	- allows user to create their own operations
+	- ethereum refers to a suite of protocols that define a platform for decentralized applications
+	-Ethereum is Turing complete
+
+A Document or file can have multiple contracts.
+
+Solidity Studying:
+
+	What is mapping?
+A mapping is used to structure value types, such as booleans, integers, addresses, and structs. It consists of two main parts: a _KeyType and a _ValueType; they appear in the following syntax:
+mapping (_KeyType => _ValueType) mapName
+
+In the example contract provided above,
+mapping (uint256 => CampaignData) campaigns
+the uint256 is the _KeyType and the CampaignData is the _ValueType. Note for later that the _ValueType, CampaignData, is a struct.
+
+Mapping Value Types to Key Types
+Think of the _KeyType as the key you'll pass through a function to be returned a desired value, or _ValueType. By default, a mapping is initially empty, so new a _KeyType will first need to be mapped to a _ValueType.
+The example contract's start function handles 3 basic processes: (1) giving a _KeyType to a new _ValueType CampaignData struct; (2) populating the new CampaignData struct with variable values; and (3) procuring a new _KeyType nextCampaignID to be ready on deck for the next time the example contract's start function is called. This segments of the function can be dissected like so:
+(1) giving a _KeyType to a new _ValueType CampaignData struct:
+    var campaign = campaigns[nextCampaignId];
+In this line, nextCampaignId is mapped as the _KeyType, and the new campaign struct is the _ValueType.
+(2) populating the new CampaignData struct with variable values:
+    campaign.recipient = recipient;
+    campaign.goal = goal;
+    campaign.deadline = deadline;
+(3) procuring a new _KeyType nextCampaignID for the next time the function is called:
+    nextCampaignId ++;
+Using a mapping here is helpful because a mapping can store many _KeyTypes to _ValueTypes - in this case if there are many campaigns occurring at once they can each have their own campaignID. Each campaign having its own ID is powerful when calling for CampaignData in future functions.
+Accessing Value Types from a Mapping with Key Types
+This example contract actually does not provide any functions that access value types in the mapping. But we can imagine what one might look like: maybe if the deadline of a campaign is extended somehow, an extendDeadline function might look like:
+function extendDeadline(uint campaignID, uint256 newDeadline) {
+    var campaign = campaigns[campaignId];
+    campaign.deadline = newDeadline;
+}
+The extendDeadline function would be using the campaignID _KeyType to query the campaigns mapping to find the appropriate CampaignData struct and update its deadline with the newDeadline.
+
+
+	What is Enum?
+	 	-used to create custom types with a finite set of values 
+	pragma solidity ^0.4.0;
+
+contract Purchase {
+ 			   enum State { Created, Locked, Inactive } // Enum
+}
+	
+
+	What is sha3(); ?
+		-alias to keccak256()
+
+	What is sha256() returns (bytes32)?
+		- compute the SHA-256 hash of the (tightly packed) arguments
+	What is keccak256() returns (bytes 32)?
+		- compute the Ethereum-SHA-3 (Keccak-256) hash of the (tightly packed) 			  arguments
+
+	What is ripemd160(a,b,c);
+		-compute RIPEMD-160 hash of the (tightly packed) arguments
+	What does revert(); do?
+
+	Solidity uses state-reverting exceptions to handle errors
+
+	The convenience functions assert and require can be used to check for conditions and throw an exception if the condition is not met. The difference between the two is that assert should only be used for internal errors and require should be used to check external conditions (invalid inputs or errors in external components
+
+	There are two other ways to trigger execptions: The revert function can be used to flag an error and revert the current call. In the future it might be possible to also include details about the error in a call to revert. The throw keyword can also be used as an alternative to revert()
+
+An assert-style exception is generated in the following situations:
+1. If you access an array at a too large or negative index (i.e. x[i] where i >= x.length or i < 0).
+2. If you access a fixed-length bytesN at a too large or negative index.
+3. If you divide or modulo by zero (e.g. 5 / 0 or 23 % 0).
+4. If you shift by a negative amount.
+5. If you convert a value too big or negative into an enum type.
+6. If you call a zero-initialized variable of internal function type.
+7. If you call assert with an argument that evaluates to false.
+A require-style exception is generated in the following situations:
+1. Calling throw.
+2. Calling require with an argument that evaluates to false.
+3. If you call a function via a message call but it does not finish properly (i.e. it runs out of gas, has no matching function, or throws an exception itself), except when a low level operation call, send, delegatecall or callcode is used. The low level operations never throw exceptions but indicate failures by returning false.
+4. If you create a contract using the new keyword but the contract creation does not finish properly (see above for the definition of “not finish properly”).
+5. If you perform an external function call targeting a contract that contains no code.
+6. If your contract receives Ether via a public function without payable modifier (including the constructor and the fallback function).
+7. If your contract receives Ether via a public getter function.
+8. If a .transfer() fails.
+
+
+	What is _; ? 
+	ELI5 explanation: It tells the function where to go. If your modifier is {action 1; _; action2;}, when called it will do action 1, then the function, then action 2. If you don't specify it I assume the underscore is implicitly placed at the end of the modifier.
+
+	more detail:
+
+	The code for the function being modified is inserted where the _ is placed in the modifier.
+	You can add more than one _s in the modifier code. And the code of the function being modified is inserted in each place where _ is located in the modifier.
+	Explicit returns from a modifier or function body only leave the current modifier or function body. Return variables are assigned and control flow continues after the “_” in the preceding modifier.
+	The modifiers gets called in the sequence they were defined (checkOne checkTwo checkThree) and at the end of the function, they are called in reverse. The modifiers seem to be applied like a stack. I
+
+	What is  a struct?
+		-Structs are custom defined types that can group several variables
+		pragma solidity ^0.4.0;
+
+	contract Ballot {
+   		 struct Voter { // Struct
+      			  uint weight;
+     			  bool voted;
+        			  address delegate;
+       			 uint vote;
+  		  }
+	  }
+	What is ecrecover(bytes32 hash, uint8 v, bytes32 r, bytes32 s) returns (address)? 
+	-recover the address associated with the public key from elliptic curve signature or 		return zero on error 
+
+	“tightly packed” means that the arguments are concatenated without padding.
+
+
+Out-of-Gas for sha256, ripemd160 or ecrecover on a private blockchain. The reason for this is that those are implemented as so-called precompiled contracts and these contracts only really exist after they received the first message.
+
+
+
+	For our smart contract how do we crowdsale tokens?
+
+	What is the campaign URL(string)? Is it a site what is that supposed to do?
+
+	Why is intrinsic gas so low? What is intrinsic gas? Shouldn’t either be enough?
+	Messages to non-existing contracts are more expensive and thus the execution runs into an Out-of-Gas error. A workaround for this problem is to first send e.g. 1 Wei to each of the contracts before you use them in your actual contracts. This is not an issue on the official or test net.
+
+	Are we creating the digital Token?
+	Yes we are inside our smart contract. 
+ 
+A mapping is used to structure value types, such as booleans, integers, addresses, and structs. It consists of two main parts: a _KeyType and a _ValueType
+		mapping (_KeyType => _ValueType) mapName
+
+
+Are we making a local API, web API or program API?
+
+The keyword payable is required for the function to be able to receive Ether, and the modifier payable has to be used for the function, or else the .value() option is not available. 
+
+An assert-style exception is generated in the following situations: 1. If you access an array at a too large or negative index (i.e. x[i] where i >= x.length or i < 0). 2. If you access a fixed-length bytesN at a too large or negative index. 3. Ifyoudivideormodulobyzero(e.g. 5 / 0or23 % 0). 4. If you shift by a negative amount. 5. If you convert a value too big or negative into an enum type. 6. If you call a zero-initialized variable of internal function type. 7. If you call assert with an argument that evaluates to false. 
+A require-style exception is generated in the following situations: 
+
+1. Calling throw.  
+2. Calling require with an argument that evaluates to false.  
+3. If you call a function via a message call but it does not finish properly (i.e. it runs out of gas, has no matching function, or throws an exception itself), except when a low level operation call, send, delegatecall or callcode is used. The low level operations never throw exceptions but indicate failures by returning false.  
+4. If you create a contract using the new keyword but the contract creation does not finish properly (see above for the definition of “not finish properly”).  
+5. If you perform an external function call targeting a contract that contains no code.  
+6. If your contract receives Ether via a public function without payable modifier (including the constructor and the fallback function).  
+7. If your contract receives Ether via a public getter function.  
+8. If a .transfer() fails.  
+
+It is possible to generate coins out of thin air, but only the person that created the contract will be able to do that. Anyone can send coins to each other without any need for registering with username and password - all you need is an Ethereum keypair. 
+
+What is an ethereum key pair?
+
+address public minter; declares a state variable of type address that is publicly accessible 
+
+address is a 160 bit value that does not allow the storage of arithmetic equations
+
+Without the keyword public , other contracts have no way to access the variable.
+
+mapping (address => uint) public balances 
+
+creates a public state variable, but it is a more complex datatype. The type maps addresses to unsigned integers.
+
+ Mappings can be seen as hash tables which are virtually initialized such that every possible key exists and is mapped to a value whose byte-representation is all zeros 
+
+‘Event’ declares a so-called “event” which is fired in the last line of the function send. If you’ve programmed Java or many other languages the Event is the same. 
+
+Constructors can run during creation of the contract and cannot be called afterwards. It permanently stores the address of the person creating the contract: msg (together with tx and block) is a magic global variable that contains some properties which allow access to the blockchain. 
+
+msg.sender is always the address where the current (external) function call came from 
+
+Mint can only be used by the creator of the contract where as send can be used by anyone. 
+
+using EthereumJS TestRPC 
