@@ -1,0 +1,48 @@
+install it :  npm install -g ethereumjs-testrpc   (you need node js already) 
+
+It's a complete blockchain-in-memory that runs only on your development machine. It processes transactions instantly instead of waiting for the default block time – so you can test that your code works quickly – and it tells you immediately when your smart contracts run into errors. It also makes a great client for automated testing, and Truffle knows how to use its special features to speed up test runtime by almost 90%
+
+Synchronize the Raspberry PI with the Private Blockchain (5/6)
+http://chainskills.com/2017/03/27/synchronize-the-raspberry-pi-with-the-private-blockchain-56/
+
+https://github.com/fivedogit/solidity-baby-steps/blob/master/contracts/35_coin_flipper.sol
+
+https://github.com/slockit/DAO#tokensol
+
+https://ethereum.github.io/browser-solidity/#version=soljson-v0.4.11+commit.68ef5810.js
+
+http://truffleframework.com/docs/getting_started/testing
+
+https://github.com/ethereumjs/testrpc
+
+https://medium.com/zeppelin-blog/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05
+
+https://ethereum.stackexchange.com/questions/2940/where-can-i-find-some-solidity-smart-contract-source-code-examples
+
+Marcus:  So I think this would be a good exercise: write and deploy a contract (of your choosing) to testRPC, then use Web3.JS or the Truffle console to make a call to one of the functions in the contract you deployed to return a variable. Note TestRPC has to be the only interface running (ie no Mist/Geth/Parity etc) to use the default RPC port.
+
+Google Token Factory, Factory. 
+
+Google what a promise is (MetaCoin.deployed().then(function(instance) {
+  meta = instance;
+  return meta.getBalance.call(account_one, {from: account_one});
+}).then(function(balance) {
+  // If this callback is called, the call was successfully executed.
+  // Note that this returns immediately without any waiting.
+  // Let's print the return value.
+  console.log(balance.toNumber()); 
+) 
+
+We need proof of product before making an ICO
+
+Hence, in the ICO contract there should be a parameter N that the function can accept which, if non-zero, returns the funds to the sender if the amount raised so far is greater than N.
+
+You could enforce this as a sort of ERC ICO contract, where all ICO contracts must inherit from this contract a rule that if the contract was deployed less than 7 days ago then the ICO cannot yet start. 
+
+Optional: Lock tokens for 1–3 months after sale:
+
+People who fund an ICO should be ones who actually believe in it, want to see the platform built, and want to use it.
+
+value-limited buys per on-chain identity (using uPort, for example), or maybe someone can create a sybil oracle of some sort
+
+https://ethereum.stackexchange.com/questions/1415/solidity-create-contract-from-contract
