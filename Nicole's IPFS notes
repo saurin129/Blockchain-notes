@@ -1,0 +1,14 @@
+//How to get IPFS PUB SUB ROOM DEMO TO WORK
+
+//Make sure you install pubsub-room-demo not pubsub-room
+//You can do that by typing this or your processing systems equivalent of:
+$ git clone https://github.com/ipfs-labs/ipfs-pubsub-room-demo.git
+$ cd ipfs-pubsub-room-demo
+$ npm init
+$ npm install
+$ nom install http-server -save
+$ npm install browserify -save
+$ npm install ipfs -save
+$ npm install ipfs-pubsub-room -save 
+$ npm run compile
+$npm start
