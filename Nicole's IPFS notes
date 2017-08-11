@@ -12,3 +12,20 @@ $ npm install ipfs -save
 $ npm install ipfs-pubsub-room -save 
 $ npm run compile
 $npm start
+
+
+
+//personal changes to Nicoles version of notes( aka  all of this meant for MAC and no promise it will work on other OS, however it should work on Linux / Linus based systems)
+
+download go-ipfs(it should give you the mac one automatically)
+mv go-ipfs/ipfs /usr/local/bin/ipfs
+cd /usr/local/bin/ipfs
+ipfs
+ipfs daemon
+ipfs swarm peers
+
+for fun: 
+
+ipfs cat /ipfs/QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ/cat.jpg >cat.jpg
+open cat.jpg
+
